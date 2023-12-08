@@ -1,6 +1,11 @@
+import 'package:alubank/components/color_dot.dart';
+import 'package:alubank/components/content_division.dart';
 import 'package:alubank/components/sections/box_card.dart';
 import 'package:alubank/components/sections/header.dart';
+import 'package:alubank/themes/themes_color.dart';
 import 'package:flutter/material.dart';
+import 'package:alubank/components/content_division.dart';
+
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -11,7 +16,7 @@ class Home extends StatelessWidget {
       body: Column(
         children: [
           Header(),
-          BoxCard(boxContent: Text("Olá mundo!"))
+          BoxCard(boxContent: ContentDivision())
         ],
       ),
 
