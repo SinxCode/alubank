@@ -6,7 +6,10 @@ class BoxCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return 
+      //O INK tem a mesma função de um container, contudo ele dirá para o Inkwell que o efeito de "click" irá acontecer sobrepondo o INK. 
+      //(Caso utilizassemos o Container o efeito ficaria atrás do container e não seria possível visualizar)
+      Ink(
       child: boxContent,
       decoration: BoxDecoration(
         boxShadow: kElevationToShadow[3],
